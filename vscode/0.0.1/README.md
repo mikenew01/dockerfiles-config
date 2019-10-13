@@ -5,6 +5,7 @@
 ```docker
 docker pull maikoncanuto/vscode:0.0.1
 ```
+![img](img/img.jpeg)
 
 
 To start the container with graphical display in windows, you will need to download the Xming program. Linux operating systems do not need third party programs for emulating the graphical interface.
@@ -19,7 +20,7 @@ After downloading the X11 server, configure as indicated.
 
 Note: Linux-based operating system does not need to perform x11 configuration
 
-1 - Configure Xming X Server `x0.hosts` file with your IP ADRESS. 
+* Configure Xming X Server `x0.hosts` file with your IP ADRESS. 
 
 ```powershell
 localhost
@@ -28,9 +29,9 @@ localhost
 
 Note: default location is `C:\Program Files (x86)\Xming\x0.hosts`
 
-2 - Open a `Powershell` command prompt. 
+* Open a `Powershell` command prompt. 
 
-3 - Set the DISPLAY environment variable
+* Set the DISPLAY environment variable
 ```powershell
 PS > set-variable -name DISPLAY -value <your_ip_local>:0.0
 ```
